@@ -48,11 +48,11 @@ try:
     '''
 
     #my_data = cursor.execute(insert_script, script_values)
-    #my_data = cursor.execute(read_script)
+    my_data = cursor.execute(read_script)
     #my_data = cursor.execute(update_script)
-    my_data = cursor.execute(delete_script)
+    #my_data = cursor.execute(delete_script)
 
-    #print(cursor.fetchall())
+    print(cursor.fetchall())
     conn.commit()
 
 except (Exception, psycopg2.Error) as err:
